@@ -13,7 +13,9 @@ My goal was to reimagine the brand’s visual identity in a **cleaner, more mode
 - 📱 Mobile-first approach
 
 ## 🚀 Live Demo
-Coming soon...
+[see the demo](https://mcdonalds-redesign-sn.vercel.app/)
+
+<img src = "assets/img/fullpagePreview.png" alt="mcdonalds redesign preview" width = "50%" />
 
 <br/>
 
