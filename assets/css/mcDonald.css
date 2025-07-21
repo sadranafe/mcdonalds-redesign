@@ -1,0 +1,601 @@
+@import url(./root.css);
+
+.tagsProvider {
+    width: 100%;
+    height: max-content;
+    padding: 20px 10px 0 10px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+nav {
+  display: grid;
+  grid-template: 56px / 1fr 5fr 2fr;
+}
+
+.links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.links div a , .sidebarLinks div a , .page1ContentTitle h1 + p , .menuItemDetails > h3 + p , .decoration , .saleOffItemDetails > div p:first-child , .oldPrice , .appsOfferContent p:first-child , .footerLinks , .footerLinks div a {
+  color: var(--color-accent-gray2);
+}
+
+.links div a , .sidebarLinks div a {
+  padding: 15px 20px;
+  margin: 0 5px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.15s;
+}
+
+.links div a:hover , .sidebarLinks div a:hover , .page1ContentTitle h1 , .menuTitle , .saleOff h2 , .saleOffItemDetails h3 , .newPrice , .appsOfferContent h2 {
+  color: var(--color-primary);
+}
+
+.loginWrapper button:last-child , .signLogin button:last-child , .menuItemDetails div button , .saleOffItemsWrapper .saleOffItem:nth-child(2) {
+  background-color: var(--color-primary);
+}
+
+.links div a:hover , .sidebarLinks div a:hover {
+  border-color: var(--color-accent-gray);
+}
+
+.active {
+  color: var(--color-primary) !important;
+  font-weight: 600;
+}
+
+.loginWrapper {
+  justify-self: end;
+  align-self: center;
+}
+
+.loginWrapper button , .signLogin button , .addToCartSection div + button {
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.loginWrapper button:first-child , .signLogin button:first-child {
+  margin-right: 20px;
+  border: 1px solid var(--color-primary);
+}
+
+.loginWrapper button:last-child , .signLogin button:last-child , .menuItemDetails div button , .saleOffItemDetails > div button , .appsOfferContent div button strong , .searchLocationWrapper {
+  color: var(--color-white);
+}
+
+.counter span , .discountIcon , .stars , .saleOffItemsWrapper .saleOffItem:nth-child(2) .saleOffItemDetails h3 , .saleOffItemsWrapper .saleOffItem:nth-child(2) .saleOffItemDetails > div .newPrice {
+    color: var(--color-secondry);
+}
+
+.counter +  div > button , .menuFilters button:first-child {
+    background-color: var(--color-secondry);
+}
+
+.page1ContentTitle h1 , .menuTitle , .menuFilters > button:hover , .saleOff h2 {
+    text-shadow: var(--textshadow);
+}
+
+/* #region hamburger button*/
+.hamMenuBtn {
+  position: relative;
+  display: none;
+  margin-right: 10px;
+  z-index: 30;
+}
+
+.labelCheck {
+  position: absolute;
+  appearance: none;
+  width: 50px;
+  height: 30px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.hamburgerLabel {
+  width: 50px;
+  display: block;
+  cursor: pointer;
+}
+
+.line1,
+.line2 {
+  position: relative;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-black);
+  transition: all 0.15s;
+}
+
+.line2 {
+    margin-top: 12.5px;
+}
+
+#checkbox:checked + .hamburgerLabel .line1 {
+    transform: rotate(45deg) translate( 11px , 10px );
+}
+
+#checkbox:checked + .hamburgerLabel .line2 {
+    transform: rotate(-45deg) translate( -1px , -1px );
+}
+
+.sidebarWrapper {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-accent-gray4);
+    backdrop-filter: blur(7px);
+    font-size: 16px;
+
+    display: grid;
+    grid-template: 5fr 1fr / 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: all 0.3s cubic-bezier(.49,.14,.56,.78);
+}
+
+.sidebarLinks div {
+    margin: 40px 0;
+    align-self: center;
+    justify-self: center;
+}
+/* #endregion*/
+
+.page1Wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1Content , .page1Img {
+    width: 50%;
+}
+
+.page1ContentTitle {
+    width: 55%;
+    margin-bottom: 40px;
+}
+
+.page1ContentTitle h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.addToCartSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.price{
+    font-weight: 600;
+}
+
+.counter {
+    width: fit-content;
+    margin: 40px 0 0 0;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.counter button {
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+.counter button:hover , .menuFilters > button {
+    background-color: var(--color-accent-gray5);
+}
+
+.counter button:first-child {
+    border-right: 1px solid var(--color-accent-gray5);
+}
+
+.counter button:last-child {
+    border-left: 1px solid var(--color-accent-gray5);
+}
+
+.counter span {
+    display: inline-block;
+    transform: translate(0px , -2px);
+    padding: 5px 20px;
+}
+
+.counter + div > button , .saleOffItemDetails > div > button {
+    padding: 15px 20px;
+    border-radius: 100px;
+}
+
+.counter +  div > button {
+    margin-left: 20px;
+}
+
+.page1Img img , .addToCartSection > p {
+    width: 100%;
+}
+
+/* #region Menu */
+.menuTitle {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.menuFilters {
+    display: grid;
+    grid-template-columns: repeat(5 , minmax(auto , 150px));
+    column-gap: 10px;
+    text-transform: capitalize;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.menuFilters::-webkit-scrollbar {
+    display: none;
+}
+
+.menuFilters > button {
+    padding: 10px 20px 12px 20px;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.1s;
+    white-space: nowrap;
+}
+
+.menuFilters button > i {
+    transform: translateY(3px);
+}
+
+.menuItemWrapper {
+    display: grid;
+    grid-template: repeat(3 , auto) / repeat(auto-fit , minmax( 285px , 1fr));
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.menuItem {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid var(--color-accent-gray3);
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+.discountIcon {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.menuItem div:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+.menuItemDetails {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menuItemDetails > h3 + p {
+    margin: 10px 0;
+}
+
+.menuItemDetails div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuItemDetails div button {
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+/* #endregion */
+
+/* #region saleOff */
+.saleOff {
+    margin: 50px 0 0 0;
+}
+
+.saleOff h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.saleOffItemsWrapper {
+    display: grid;
+    grid-template-columns : repeat(auto-fit , minmax(285px , 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.saleOffItemsWrapper .saleOffItem:nth-child(1) , .saleOffItemsWrapper .saleOffItem:nth-child(3) {
+    background-color: var(--color-accent-gray3);
+}
+
+.saleOffItemsWrapper .saleOffItem:nth-child(2) .decoration , .saleOffItemsWrapper .saleOffItem:nth-child(2) .saleOffItemDetails > div .oldPrice {
+    color: var(--color-white) !important;
+}
+
+.saleOffItem {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--color-accent-gray3);
+    box-shadow: 0 5px 15px var(--box-shadow-soft);
+    transition: all 0.3s;
+}
+
+.saleOffItem:hover {
+    transform: translateY(-5px);
+}
+
+.decoration {
+    font-size: 12px;
+}
+
+.saleOffItemDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 0 0;
+}
+
+.saleOffItemDetails h3 {
+    font-size: 20px;
+    z-index: 2;
+}
+
+.saleOffItemDetails div {
+    width: 100%;
+}
+
+.saleOffItemDetails > div button {
+    margin: 20px 0 0 0 ;
+    background-color: var(--color-accent-gray2);
+}
+
+.saleOffItemDetails > div p:first-child {
+    margin: 0 0 20px 0;
+    font-size: 12px;
+    width: 55%;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+}
+
+.saleOffItemImg {
+    position: absolute;
+    object-fit: contain;
+    right: -40px;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+
+.saleOffItemImg img {
+    width: 200px;
+}
+/* #endregion saleOff */
+
+/* #region appsOffer */
+.appsOffer {
+    background-color: var(--color-accent-gray5);
+    display: grid;
+    grid-template-columns: 350px 2fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    margin: 100px 0 0 -100px;
+
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+
+.appsOffer div:first-child {
+    width: 100%;
+    height: 300px;
+    text-align: end;
+}
+
+.appsOffer div:first-child img {
+    width: clamp(150px, 105px + 14vw, 280px);
+    height: 330px;
+    transform: translate(0 ,-9%);
+}
+
+.appsOfferContent h2 {
+    font-size: clamp(18px , 11px + 2.2vw , 40px );
+    margin: 10px 0 20px 0;
+}
+
+.appsOfferContent p:first-child , .appsOfferContent h2 + p {
+    font-size: clamp(11px, 10px + 0.5vw, 14px);
+}
+
+.appsOfferContent h2 + p {
+    color: var(--color-accent-gray);
+    line-height: 23px;
+    width: 71%;
+    text-align: justify;
+    margin: 0 0 25px 0;
+}
+
+.appsOfferContent div button{
+    background-color: var(--color-accent-gray2);
+    color: var(--color-accent-gray4);
+    padding: 10px 20px;
+    font-size: 11px;
+    border-radius: 100px;
+}
+/* #endregion appsOffer */
+
+/* #region searchLocation */
+.searchLocationWrapper {
+    background-image: url(../img/menu/salad.png) , url(../img/menu/chickenBurger.png);
+    background-color: var(--color-accent-gray-hard);
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: 4% 7% , 13% 120%;
+    background-blend-mode: overlay;
+
+    height: 400px;
+    padding: 10px;
+    margin: 80px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    border-radius: 20px;
+}
+
+.searchLocationWrapper div:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+.searchLocationWrapper div:first-child h1 {
+    font-size: clamp(20px, 14px + 2vw, 40px);
+}
+
+.searchLocationWrapper div:first-child p {
+    color: var(--color-accent-gray4);
+    margin: 10px 0 0 0;
+}
+
+.searchLocationWrapper div:last-child {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.searchLocationWrapper input {
+    background-color: var(--color-secondry);
+    padding: 15px 25px;
+    border-radius: 100px;
+    width: 40%;
+    caret-color: var(--color-primary);
+}
+
+.searchLocationWrapper button {
+    background-color: var(--color-white);
+    position: absolute;
+    right: 30.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+/* #endregion searchLocation */
+
+/* #region footer */
+footer {
+    background-color: var(--color-accent-gray6);
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 20px 20px 20px;
+}
+
+footer div:first-child div:first-child {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer div:first-child div:first-child h2 {
+    font-size: clamp(20px, 18.5px + 0.5vw, 25px);;
+}
+
+footer div:first-child div:last-child {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer div:first-child div:last-child a {
+    color: var(--color-accent-gray2);
+    margin: 0 10px;
+    padding: 10px;
+    transition: all 0.1s;
+}
+
+footer div:first-child div:last-child a:hover {
+    color: var(--color-secondry);
+}
+
+.footerLinks {
+    display: grid;
+    grid-template: 50px max-content / repeat(2 , 1fr);
+    justify-items: start;
+    align-items: center;
+    justify-self: start;
+}
+
+.footerLinks h3 {
+    color: var(--color-accent-gray);
+    text-transform: uppercase;
+    font-size: clamp(15px, 14px + 0.2vw, 17px);
+}
+
+.footerLinks div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    align-content: baseline;
+    gap: 5px;
+}
+
+.footerLinks div a {
+    padding: 10px;
+    font-size: 12px;
+    transition: all 0.1s;
+}
+
+.footerLinks div a:hover {
+    color: var(--color-primary);
+}
+
+.footerLinks p {
+    line-height: 25px;
+    font-size: 12px;
+}
+/* #endregion footer */

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the sample that powered by Mohammad Sadra Nafe">
+
+    <meta name="author" content="mohammad sadra nafe">
+    <title>McDonald's : Burgers , Fries & More. @ sadra nafe</title>
+    <link rel="stylesheet" href="./assets/css/mcDonald.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="tagsProvider">
+        <header>
+            <nav>
+                <div class="logoWrapper">
+                    <img src="./assets/img/logo.png" alt="mcDonald's">
+                </div>
+
+                <div class="links">
+                    <div>
+                        <a href="#" class="active">homepage</a>
+                    </div>
+
+                    <div>
+                        <a href="#menu">menu</a>
+                    </div>
+
+                    <div>
+                        <a href="#saleOff">sale off</a>
+                    </div>
+
+                    <div>
+                        <a href="#">news</a>
+                    </div>
+
+                    <div>
+                        <a href="#">contacts</a>
+                    </div>
+                </div>
+
+                <div class="loginWrapper">
+                    <button>sign in</button>
+                    <button>login</button>
+                </div>
+
+                <div class="hamMenuBtn">
+                    <input type="checkbox" class="labelCheck" id="checkbox">
+
+                    <label for="labelCheck" class="hamburgerLabel">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </label>
+                </div>
+
+                <div class="sidebarWrapper">
+                    <div class="sidebarLinks">
+                        <div>
+                            <a href="#" class="active">homepage</a>
+                        </div>
+
+                        <div>
+                            <a href="#">menu</a>
+                        </div>
+
+                        <div>
+                            <a href="#">sale off</a>
+                        </div>
+
+                        <div>
+                            <a href="#">news</a>
+                        </div>
+
+                        <div>
+                            <a href="#">contacts</a>
+                        </div>
+                    </div>
+
+                    <div class="signLogin">
+                        <button>sign in</button>
+                        <button>login</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="page1Wrapper">
+                <div class="page1Content">
+                    <div class="page1ContentTitle">
+                        <h1>Order your favorite food</h1>
+                        <p>Hamburger has many flavors, have you tried Cheese Beef Hamburger?</p>
+                    </div>
+
+                    <div class="addToCartSection">
+                        <p>total order : <span class="price">$5.39</span></p>
+
+                        <div class="counter">
+                            <button>
+                                <i class='bx  bx-minus'></i>
+                            </button>
+
+                            <span>3</span>
+
+                            <button>
+                                <i class='bx  bx-plus'></i>
+                            </button>
+                        </div>
+
+                        <div>
+                            <button>
+                                <i class='bx  bx-shopping-bag'></i>
+                                order now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page1Img">
+                    <img src="./assets/img/page1/hamburger.png" alt="Mohammad Sadra Nafe">
+                </div>
+            </div>
+
+            <div class="menu" id="menu">
+                <h2 class="menuTitle">menu</h2>
+                <div class="menuFilters">
+                    <button>
+                        <i class='bx  bx-discount bx-xs'></i>
+                        best seller
+                    </button>
+
+                    <button>
+                        <i class='bx  bx-burger bx-xs'></i>
+                        hamburger
+                    </button>
+
+                    <button>
+                        <i class='bx  bx-cup bx-xs'></i>
+                        drink
+                    </button>
+
+                    <button>
+                        <i class='bx  bx-icecream bx-xs'></i>
+                        desserts
+                    </button>
+
+                    <button>
+                        <i class='bx  bx-dish bx-xs'></i>
+                        fried chickens
+                    </button>
+                </div>
+
+                <div class="menuItemWrapper">
+                    <div class="menuItem">
+                        <div>
+                            <img src="./assets/img/menu/cheeseBeefHamburger.png" alt="cheese beef hamburger"
+                                width="200px">
+                        </div>
+
+                        <div class="menuItemDetails">
+                            <h3>Cheese Beef Hamburger</h3>
+                            <p>fried chicken balls, french fries</p>
+                            <p class="stars">
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                            </p>
+                            <div>
+                                <p class="price">5.39 $</p>
+
+                                <button>
+                                    <i class='bx  bx-cart bx-xs'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div>
+                            <img src="./assets/img/menu/friedChicken.png" alt="fried chicken" width="200px">
+                        </div>
+
+                        <i class='bx  bxs-discount bx-md discountIcon'></i>
+
+                        <div class="menuItemDetails">
+                            <h3>Combo funny</h3>
+                            <p>fried chicken balls, french fries</p>
+                            <p class="stars">
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                            </p>
+                            <div>
+                                <p class="price">5.39 $</p>
+
+                                <button>
+                                    <i class='bx  bx-cart bx-xs'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div>
+                            <img src="./assets/img/menu/friedChickenWithHotSauce.png" alt="fried Chicken With Hot Sauce"
+                                width="200px">
+                        </div>
+
+                        <div class="menuItemDetails">
+                            <h3>Chicken with Spicy Sauce</h3>
+                            <p>chili garlic sauce, black pepper sauce</p>
+                            <p class="stars">
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                            </p>
+                            <div>
+                                <p class="price">5.39 $</p>
+
+                                <button>
+                                    <i class='bx  bx-cart bx-xs'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div>
+                            <img src="./assets/img/menu/salad.png" alt="salad" width="200px">
+                        </div>
+
+                        <i class='bx  bxs-discount bx-md discountIcon'></i>
+
+                        <div class="menuItemDetails">
+                            <h3>Salad mixed vinegar</h3>
+                            <p>Salad, vinegar, tomato</p>
+                            <p class="stars">
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                            </p>
+                            <div>
+                                <p class="price">5.39 $</p>
+
+                                <button>
+                                    <i class='bx  bx-cart bx-xs'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div>
+                            <img src="./assets/img/menu/chickenBurger.png" alt="cheese beef hamburger" width="200px">
+                        </div>
+
+                        <div class="menuItemDetails">
+                            <h3>Chicken burger</h3>
+                            <p>fried chicken</p>
+                            <p class="stars">
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                            </p>
+                            <div>
+                                <p class="price">5.39 $</p>
+
+                                <button>
+                                    <i class='bx  bx-cart bx-xs'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div>
+                            <img src="./assets/img/menu/iceTea.png" alt="ice tea" width="200px">
+                        </div>
+
+                        <i class='bx  bxs-discount bx-md discountIcon'></i>
+
+                        <div class="menuItemDetails">
+                            <h3>Lipton</h3>
+                            <p>ice Tea</p>
+                            <p class="stars">
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                                <i class='bx  bxs-star'></i>
+                            </p>
+                            <div>
+                                <p class="price">2.8 $</p>
+
+                                <button>
+                                    <i class='bx  bx-cart bx-xs'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saleOff">
+                <h2>sale off</h2>
+
+                <div class="saleOffItemsWrapper">
+                    <div class="saleOffItem">
+                        <span class="decoration">#fast food</span>
+
+                        <div class="saleOffItemContent">
+                            <div class="saleOffItemDetails">
+                                <h3>Combo funny</h3>
+
+                                <div>
+                                    <p>buy 1 funny combo get 1 coca cola</p>
+
+                                    <p>
+                                        <span class="oldPrice">10.3 $</span>
+                                        <span class="price newPrice">7.67 $</span>
+                                    </p>
+
+                                    <button>
+                                        <i class="bx  bx-shopping-bag"></i>
+                                        order now
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="saleOffItemImg">
+                                <img src="./assets/img/menu/friedChicken.png" alt="fried chicken mcDonald">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="saleOffItem">
+                        <span class="decoration"># fast food</span>
+
+                        <div class="saleOffItemContent">
+                            <div class="saleOffItemDetails">
+                                <h3>Salad mixed vinegar</h3>
+
+                                <div>
+                                    <p>
+                                        <span class="oldPrice">10.3 $</span>
+                                        <span class="price newPrice">3.4 $</span>
+                                    </p>
+
+                                    <button>
+                                        <i class="bx  bx-shopping-bag"></i>
+                                        order now
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="saleOffItemImg">
+                                <img src="./assets/img/menu/salad.png" alt="fried chicken mcDonald">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="saleOffItem">
+                        <span class="decoration"># fast food</span>
+
+                        <div class="saleOffItemContent">
+                            <div class="saleOffItemDetails">
+                                <h3>CHICKEN BUGGER</h3>
+
+                                <div>
+                                    <p>fried chicken</p>
+
+                                    <p>
+                                        <span class="oldPrice">8.1 $</span>
+                                        <span class="price newPrice">6.7 $</span>
+                                    </p>
+
+                                    <button>
+                                        <i class="bx  bx-shopping-bag"></i>
+                                        order now
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="saleOffItemImg">
+                                <img src="./assets/img/menu/chickenBurger.png" alt="fried chicken mcDonald">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appsOffer">
+                <div>
+                    <img src="./assets/img/appsOffers/mobileGroup.png" alt="mcDonald' mobile app - mohammad sadra nafe">
+                </div>
+
+                <div class="appsOfferContent">
+                    <p>
+                        Exclusive offers and more
+                    </p>
+
+                    <h2>MCDONALD'S MOBILE APP</h2>
+
+                    <p>As a global No. 1 fast food brand, McDonald's wishes to bring customers not only delicious and
+                        hygienic food of international standards but also the best service experience.</p>
+
+                    <div>
+                        <button>download on the <br> <strong>app store</strong></button>
+                        <button>download on the <br> <strong>google play</strong> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="searchLocationWrapper">
+                <div>
+                    <h1>FIND A FOODELI STORE NEAR YOU</h1>
+                    <p>see the convenience store address with you most</p>
+                </div>
+
+                <div>
+                    <input type="text" placeholder="typing location">
+                    <button>See on map</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <img src="./assets/img/logo.png" alt="mcDonald - @powered by mohammad sadra nafe">
+
+                <h2>Mc Donald's</h2>
+            </div>
+
+            <div>
+                <a href="https://github.com/sadranafe">
+                    <i class='bxl bx-github bx-sm'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bxl  bx-instagram bx-sm'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bxl  bx-linkedin bx-sm'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footerLinks">
+            <h3>useful links</h3>
+
+            <h3>opening hour</h3>
+
+            <div>
+                <a href="#">homepage</a>
+                <a href="#">menu</a>
+                <a href="#">sale off</a>
+                <a href="#">news</a>
+                <a href="#">contact</a>
+            </div>
+
+            <p>
+                Monday - Friday:9:00 - 23:00h <br>
+                Saturday:09:00 - 16:00h <br>
+                Sunday:12:00 - 18:00h
+            </p>
+        </div>
+    </footer>
+</body>
+
+
+<script>
+    const checkbox = document.getElementById('checkbox');
+    const sidebar = document.querySelector('.sidebarWrapper')
+
+    checkbox.addEventListener('click', ev => {
+        ev.target.checked ? sidebar.style.right = 0 : sidebar.style.right = '-100%';
+    })
+</script>
+
+</html>

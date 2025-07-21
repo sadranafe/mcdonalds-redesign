@@ -1,0 +1,336 @@
+
+/* #region saleOff mediaQuery */
+@media (max-width : 1000px) {
+    .saleOffItemImg img {
+        width: 180px;
+    }
+}
+
+@media (max-width : 640px) {
+    .saleOffItemImg img {
+        width: 160px;
+    }
+}
+
+@media (max-width : 599px) {
+    .saleOffItemImg img {
+        width: 200px;
+    }
+}
+
+@media (max-width : 340px) and (min-width : 311px) {
+    .saleOffItemImg img {
+        width: 185px;
+    }
+}
+/* #endregion saleOff */
+
+@media (max-width : 940px) {
+    .page1ContentTitle {
+        width: 80%;
+    }
+}
+
+@media (max-width : 900px) {
+    nav {
+        grid-template-columns: repeat(2 , 1fr);
+        align-items: center;
+        justify-content: end;
+    }
+
+    .links , .loginWrapper {
+        display: none;
+    }
+
+    .hamMenuBtn {
+        display: inline-block;
+        justify-self: end;
+    }
+
+    .page1ContentTitle h1 {
+        font-size: 40px;
+    }
+
+    .appsOffer {
+        grid-template: 1.5fr 1fr / 1fr;
+        border-top-left-radius: 300px;
+        border-bottom-right-radius: 0;
+        margin: 100px 0 50px 0;
+        gap: 40px;
+    }
+
+    .appsOfferContent {
+        text-align: center;
+    }
+
+    .appsOffer div:first-child {
+        order: 2;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .appsOffer div:first-child img{
+        height: fit-content;
+        transform: translate(0 , 2px);
+    }
+
+    .appsOfferContent h2 {
+        margin-top: 20px;
+    }
+
+    .appsOfferContent h2 + p {
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .searchLocationWrapper input {
+        width: 70%;
+    }
+    .searchLocationWrapper button {
+        right: 16%;
+    }
+}
+
+@media (max-width : 768px) {
+    .page1Content{
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .page1Img {
+        width: 65%;
+    }
+
+    .page1ContentTitle {
+        width: 65%;
+        margin: 20px auto;
+        padding: 20px 0;
+    }
+
+    .page1ContentTitle h1 {
+        font-size: 48px;
+    }
+
+    .addToCartSection {
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    .addToCartSection p {
+        max-width: fit-content;
+        margin-right: 30px;
+    }
+
+    .counter {
+        margin: 0;
+    }
+
+    .appsOffer {
+        grid-template: 1.5fr 1fr / 1fr;
+        padding: 20px 50px;
+        gap: 0;
+    }
+
+    .appsOffer div:first-child img {
+        transform: translate(0 , 22px);
+    }
+
+    .appsOfferContent h2 + p {
+        width: 100%;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    footer div:first-child {
+        order: 2;
+    }
+
+    .footerLinks {
+        justify-self: center;
+    }
+}
+
+@media (max-width : 550px) {
+    .appsOffer {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width : 500px) {
+    .page1ContentTitle {
+        width: 100%;
+    }
+
+    .page1ContentTitle h1 {
+        font-size: 40px;
+    }
+    
+    .addToCartSection {
+        gap: 25px;
+    }
+
+    .addToCartSection p {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .counter + div > button {
+        margin: 0;
+    }
+
+    .page1Img {
+        width: 100%;
+    }
+
+    .appsOfferContent h2 + p {
+        margin: 20px auto 30px auto;
+        line-height: 18px;
+    }
+
+    .appsOfferContent div {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .searchLocationWrapper input {
+        width: 90%;
+    }
+
+    .searchLocationWrapper button {
+        right: 7%;
+    }
+}
+
+
+@media (max-width : 350px) {
+    .appsOffer {
+        padding: 40px 15px 20px 15px;
+    }
+}
+
+@media (max-width : 310px) {
+    .menuItemWrapper {
+        grid-template: repeat(3 , auto) / repeat(auto-fit , minmax( 150px , 1fr));
+    }
+
+    .menuItem {
+        padding: 15px 20px;
+    }
+    
+    .menuItem div:first-child > img {
+        width: 100% !important;
+    }
+
+    .menuItemDetails > h3 {
+        font-size: 14px;
+    }
+
+    .menuItemDetails > h3 + p{
+        font-size: 12px;
+    }
+
+    .saleOff h2 {
+        font-size: 30px;
+    }
+
+    .saleOffItemsWrapper {
+        grid-template-columns : repeat(auto-fit , minmax(150px , 1fr));
+    }
+
+    .saleOffItem , .saleOffItemContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .saleOffItemDetails {
+        order: 2;
+    }
+
+    .saleOffItemDetails h3 {
+        font-size: 15px;
+    }
+    
+    .saleOffItemDetails > div p:first-child {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .saleOffItemDetails > div button {
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+    
+    .saleOffItemImg {
+        margin: 0 0 40px 0;
+        position: relative;
+        transform: translate(0);
+        top: 0;
+        right: 0;
+    }
+
+    .saleOffItemImg img {
+        width: 100%;
+    }
+
+    .appsOfferContent div {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .appsOffer {
+        padding: 80px 15px 20px 15px ;
+    }
+
+    .appsOffer div:first-child img {
+        height: 213px;
+    }
+
+    .searchLocationWrapper input {
+        width: 100%;
+    }
+
+    .searchLocationWrapper div:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .searchLocationWrapper button {
+        position: relative;
+        transform: translate(0);
+        right: 0;
+    }
+
+    .footerLinks {
+        grid-template: 1fr / 1fr;
+        row-gap: 10px;
+    }
+
+    .footerLinks h3:first-child {
+        order: 1;
+    }
+
+    .footerLinks div {
+        order: 2;
+        margin-bottom: 25px;
+    }
+
+    .footerLinks h3:first-child + h3 {
+        order: 3;
+    }
+
+    .footerLinks div + p {
+        order: 4;
+    }
+}
